@@ -180,6 +180,10 @@ on boot
     write /dev/cpuset/background/cpus 0-7
     write /dev/cpuset/system-background/cpus 0-7
 
+# Allow system to read measured screen FPS
+    chown system graphics /sys/class/drm/card0/sde-crtc-0/measured_fps
+    chmod 0660 /sys/class/drm/card0/sde-crtc-0/measured_fps
+
 # D2TW
     chown system system /dev/input/event2
     chmod 0660 /dev/input/event2
