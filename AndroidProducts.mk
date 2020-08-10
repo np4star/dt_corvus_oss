@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_laurel_sprout.mk
+    $(LOCAL_DIR)/du_laurel_sprout.mk
