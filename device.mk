@@ -517,7 +517,3 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
-
-# Google Camera
-PRODUCT_PACKAGES += \
-    MGC
