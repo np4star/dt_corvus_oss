@@ -14,12 +14,17 @@ $(call inherit-product, device/xiaomi/laurel_sprout/device.mk)
 
 # Inherit some common PixelExperience stuff.
 $(call inherit-product, vendor/du/config/common_full_phone.mk)
+
 TARGET_GAPPS_ARCH := arm64
-TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_WIFI_EXT := true
 TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 EXTRA_FOD_ANIMATIONS := true
+USE_GAPPS := true
+
+#Boot Animation
+scr_resolution := 1080
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := du_laurel_sprout

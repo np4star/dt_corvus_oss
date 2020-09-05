@@ -10,9 +10,6 @@ $(call inherit-product-if-exists, vendor/xiaomi/laurel_sprout/laurel_sprout-vend
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
-# Include MiuiCamera
-$(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
-
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_prop.mk
 
@@ -517,3 +514,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+# Google Camera
+PRODUCT_PACKAGES += \
+    MGC
